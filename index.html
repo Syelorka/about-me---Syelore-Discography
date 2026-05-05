@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SYELORE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<audio id="bg-music" loop>
+  <source src="audio/theme.wav" type="audio/mpeg">
+</audio>
+
+<div class="music-control">
+  <button id="music-toggle">PLAY</button>
+  <input id="music-volume" type="range" min="0" max="1" step="0.01" value="0.2">
+</div>
+
+
+<body>
+
+<div class="intro" id="intro">
+  <div class="intro-logo">SYELORE</div>
+</div>
+
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+
+  <!-- VIDEO BACKGROUND -->
+  <video class="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="video/background.mp4" type="video/mp4">
+  </video>
+<div class="glow"></div>
+<div class="particles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+  <!-- OVERLAY -->
+  <div class="overlay"></div>
+
+  <!-- MENU -->
+  <div class="menu-toggle">MENU</div>
+  <div class="menu-overlay">
+    <a href="discography.html">Discography</a>
+    <a href="platforms.html">Platforms</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- HERO -->
+  <main class="hero">
+
+    <h1 class="hero-title">SYELORE</h1>
+
+    <p class="hero-subtitle">
+      Artist · Producer · Sound Engineer
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="actions">
+      <button type="button" onclick="location.href='discography.html'">
+        Discography
+      </button>
+
+      <button type="button" onclick="location.href='platforms.html'">
+        Platforms
+      </button>
+
+      <button type="button" onclick="location.href='about.html'">
+        About
+      </button>
+
+      <button type="button" onclick="location.href='contact.html'">
+        Contact
+      </button>
+      
+    </div>
+</button>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">© 2026 SYELORE</footer>
+
+  <!-- JS -->
+  <script src="js/intro.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/music.js"></script>
+
+</body>
+</html>
